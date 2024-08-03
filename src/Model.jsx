@@ -13,11 +13,11 @@ import { Color, Vector2 } from "three";
 import { animate } from "framer-motion";
 import { easeQuadOut } from "d3-ease";
 
-import { noise } from "./Noise";
-import { useStore } from "./store";
-import { colors } from "./data";
+import { noise } from "Noise";
+import { useStore } from "store";
+import { colors } from "data";
 
-import model from "./assets/models/energy-can.glb?url";
+import model from "assets/models/energy-can.glb?url";
 
 const Model = (props) => {
   const { nodes, materials } = useGLTF(model);
